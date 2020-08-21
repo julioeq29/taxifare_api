@@ -40,6 +40,7 @@ def download_model(model_version=MODEL_VERSION, bucket=BUCKET_NAME, rm=True):
         MODEL_NAME,
         model_version,
         'model.joblib')
+    print(storage_location)
     blob = client.blob(storage_location)
     blob.download_to_filename('model.joblib')
     print(f"=> pipeline downloaded from storage")
@@ -47,3 +48,7 @@ def download_model(model_version=MODEL_VERSION, bucket=BUCKET_NAME, rm=True):
     if rm:
         os.remove('model.joblib')
     return model
+
+if __name__ == "__main__":
+    print("############   Loading Data   ############")
+    download_model()

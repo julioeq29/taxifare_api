@@ -5,11 +5,11 @@
 
 ### GCP Project - - - - - - - - - - - - - - - - - - - - - -
 
-PROJECT_ID = "wagon-bootcamp-256316"
+PROJECT_ID = "wagon-bootcamp-290987"
 
 ### GCP Storage - - - - - - - - - - - - - - - - - - - - - -
 
-BUCKET_NAME = 'wagon-ml-bizot-27'
+BUCKET_NAME = 'wagon-ml-quintana-00'
 
 ##### Data  - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -24,5 +24,5 @@ BUCKET_TRAIN_DATA_PATH = 'data/train_1k.csv'
 MODEL_NAME = 'taxifare'
 
 # model version folder name (where the trained model.joblib file will be stored)
-MODEL_VERSION = 'Pipeline'
+MODEL_VERSION = 'v1'
 
